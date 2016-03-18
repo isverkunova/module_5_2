@@ -27,38 +27,33 @@
                 <p>Cadastre-se</p>
             </div>
             <div class="fb">
-                <a href="#"><img src="img/f.png" alt="fb_logo"><span>Log In</span> with <span>Facebook</span></a>
+                <a href="#"><img class="fb-logo" src="img/f.png" alt="fb-logo"><span>Log In</span> with <span>Facebook</span><img class="fb_row" src="img/row.png" alt="row"></a>
             </div>
             <div class="ou">
                 <img src="img/dash.png" alt="dash1"><span>OU</span><img src="img/dash.png" alt="dash2">
             </div>
             <div>
-                <form class="input-field" action="#">
-                    <input class="active" type="text" name="first-name" placeholder="First Name">
-                    <input type="text" name="last-name" placeholder="Last Name">
-                    <input type="text" name="email" placeholder="Email Address">
-                    <input type="password" name="password" placeholder="Choose Password">
-                    <input type="password" name="password" placeholder="Password Confirm">
-                </form>
-            </div>
-                <!--END input-field-->
+                <form class="input-field" action="#" method="post">
+                    <input class="active" type="text" name="first-name" placeholder="First Name" required>
+                    <input type="text" name="last-name" placeholder="Last Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="password" name="password" placeholder="Choose Password" required>
+                    <input type="password" name="password" placeholder="Password Confirm" required>
 
-            <form>
-                <div class="check-field">
-                    <input type="checkbox" id="check">
-                    <label for="check">Send me Youbike updates and tips</label>
-                </div>
-            </form>
-            <div class="btn">
-                <form action="#">
-                    <input type="submit" value="Create my Account">
+                    <div class="check-field">
+                        <input type="checkbox" id="check">
+                        <label for="check">Send me Youbike updates and tips</label>
+                    </div>
+                    <div class="btn">
+                        <input type="submit" value="Create my Account">
+                    </div>
                 </form>
+                <div class="policy">
+                    <p>By clicking the button above, you agree to the Terms of Service Xiew our Privacy Policy.</p>
+                </div>
             </div>
-            <div class="policy">
-                <p>By clicking the button above, you agree to the Terms of Service<br> Xiew our Privacy Policy.</p>
-            </div>
-            <!--END container-->
         </div>
+        <!--END container-->
     </div>
 </body>
 </html>
