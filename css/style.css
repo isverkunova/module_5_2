@@ -1,11 +1,11 @@
 body {
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+    font-family: 'Helvetica Neue', sans-serif;
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-
-.wrapper {
+.wrap {
     width: 1215px;
     height: 1064px;
     margin: 0 auto;
@@ -24,44 +24,53 @@ body {
 
 a {
     display: block;
-    padding: 0 16px;
+    height: 36px;
+    padding: 0 14px 0 15px;
     color: #60b5ed;
     font-size: 14px;
-    line-height: 36px;
+    line-height: 35px;
     text-decoration: none;
 }
 
 span {
     color: #fff;
     font-size: 14px;
+}
+
+.underlined {
     text-decoration: underline;
 }
 
 .menu .select {
-    background-color: #4eabda;
+    padding-right: 11px;
+    background-color: #00aed9;
     color: #fff;
 }
 
 .entrance {
+    width: 191px;
+    height: 35px;
     margin-right: 20px;
-    padding: 0 20px;
+    padding: 0 11px;
     border-right: 1px solid #479ad4;
+    border-bottom: 1px solid #009bd0;
     border-left: 1px solid #479ad4;
-    background: linear-gradient(to bottom, #87e0fd 0%, #53cbf1 40%, #05abe0 100%);
-    background: -moz-linear-gradient(top, #87e0fd 0%, #53cbf1 40%, #05abe0 100%);
-    /*background: -webkit-linear-gradient(top, #87e0fd 0%, #53cbf1 40%, #05abe0 100%);*/
-    color: #000;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#87e0fd', endColorstr='#05abe0', GradientType=0);
+    border-radius: 1px;
+    background: -moz-linear-gradient(top, #00b6df 0%, #007cc1 100%);
+    background: -webkit-linear-gradient(top, #00b6df 0%, #007cc1 100%);
+    background: linear-gradient(to bottom, #00b6df 0%, #007cc1 100%);
+    box-sizing: border-box;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00b6df', endColorstr='#007cc1',GradientType=0);
 }
 
 .menu .flagged {
-    padding: 0 27px 0 20px;
+    padding: 0 17px 0 20px;
     border-left: 1px solid #56a2dc;
     color: #fff;
 }
 
 .flagged img {
-    margin: 5px 5px -7px 0;
+    margin: 5px 6px -7px 0;
 }
 /* END menu */
 
@@ -69,7 +78,7 @@ span {
     width: 560px;
     height: 613px;
     margin: 213px auto auto 353px;
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, .65);
 }
 
 .header p {
@@ -80,19 +89,23 @@ span {
     text-align: center;
 }
 
-.fb {
+.fb-login {
     width: 276px;
-    margin: 35px auto 24px;
+    height: 35px;
+    margin: 36px auto 24px;
     border-top: 1px solid #7b8cb8;
     border-radius: 5px;
-    background-color: #2b4278;
+    background: -moz-linear-gradient(top, #25569c 0%, #19437c 100%);
+    background: -webkit-linear-gradient(top, #25569c 0%, #19437c 100%);
+    background: linear-gradient(to bottom, #25569c 0%, #19437c 100%);
     color: #fff;
     text-align: center;
     overflow: hidden;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#25569c', endColorstr='#19437c',GradientType=0);
     box-sizing: border-box;
 }
 
-.fb a {
+.fb-login a {
     padding: 0;
     color: #fff;
     line-height: 35px;
@@ -102,37 +115,37 @@ span {
     display: block;
     padding: 7px 13px 7px 15px;
     float: left;
-    border-right: 1px solid #213c71;
+    border-right: 1px solid #203b72;
 }
 
-.fb-row {
+.fb-arrow {
     display: block;
-    padding: 11px 24px 11px 0;
+    padding: 9px 25px 11px 0;
     float: right;
 }
 
-.fb span {
+.fb-login span {
     padding: 0;
     font-weight: bold;
-    line-height: 35px;
+    line-height: 34px;
     text-decoration: none;
 }
 /* END fb */
 
-.ou {
+.separator {
     width: 277px;
-    margin: 0 auto 20px;
+    margin: -1px auto 21px;
     text-align: center;
 }
 
-.ou span {
+.separator span {
     margin: 0 5px;
     color: #999;
     line-height: 30px;
     text-decoration: none;
 }
 
-.ou img {
+.separator img {
     padding: 4px 0;
 }
 
@@ -141,39 +154,41 @@ form {
     margin: 0 auto;
 }
 
-.input-field {
+.registration {
     width: 276px;
     margin: 0 auto;
     box-sizing: border-box;
 }
 
-.input-field > input {
+.registration > input {
     width: 240px;
+    height: 12px;
     margin: 0 auto 15px;
-    padding: 14px 18px 9px;
+    padding: 12px 18px 11px;
     border: 0;
     border-bottom: 1px solid #484848;
     background-color: #100f0f;
     color: #fff;
-    line-height: 11px;
+    line-height: 12px;
 }
 
-.input-field .active {
+.registration .active {
+    margin-bottom: 19px;
     border-bottom: 1px solid #689bcc;
     background-color: #1b5288;
     color: #fff;
-    -moz-box-shadow: 0 0 9px 0 rgba(156, 240, 255, 1);
-    -webkit-box-shadow: 0 0 9px 0 rgba(156, 240, 255, 1);
-    box-shadow: 0 0 16px 0 rgba(156, 240, 255, 1);
+    -moz-box-shadow: 0 0 7px 3px rgba(0, 142, 178, .98);
+    -webkit-box-shadow: 0 0 7px 3px rgba(0, 142, 178, .98);
+    box-shadow: 0 0 7px 3px rgba(0, 142, 178, .98);
 }
 
-.input-field input:focus {
+.registration input:focus {
     border-bottom: 1px solid #689bcc;
     background-color: #1b5288;
     color: #fff;
-    -moz-box-shadow: 0 0 9px 0 rgba(156, 240, 255, 1);
-    -webkit-box-shadow: 0 0 9px 0 rgba(156, 240, 255, 1);
-    box-shadow: 0 0 9px 0 rgba(156, 240, 255, 1);
+    -moz-box-shadow: 0 0 6px 3px rgba(0, 137, 177, 1);
+    -webkit-box-shadow: 0 0 6px 3px rgba(0, 137, 177, 1);
+    box-shadow: 0 0 6px 3px rgba(0, 137, 177, 1);
 }
 
 .check-field {
@@ -181,11 +196,10 @@ form {
 }
 
 label {
-    padding-left: 5px;
     color: #ccc;
     font-size: 14px;
 }
-/* END input-field */
+/* END registration */
 
 .btn {
     text-align: center;
@@ -195,24 +209,28 @@ label {
     width: 150px;
     height: 36px;
     margin: 0 64px 16px;
-    border-top: 1px solid #62c0e3;
+    padding: 0 9px;
+    border: 1px solid #00a4db;
+    border-top: 3px #00c8e4;
+    border-bottom: 2px solid #0087c4;
     border-radius: 2px;
-    background: linear-gradient(to bottom, #87e0fd 0%, #53cbf1 40%, #05abe0 100%);
-    background: -moz-linear-gradient(top, #87e0fd 0%, #53cbf1 40%, #05abe0 100%);
-    background: -webkit-linear-gradient(top, #87e0fd 0%, #53cbf1 40%, #05abe0 100%);
+    background: -moz-linear-gradient(top, #00c1e9 0%, #007dc1 100%);
+    background: -webkit-linear-gradient(top, #00c1e9 0%, #007dc1 100%);
+    background: linear-gradient(to bottom, #00c1e9 0%, #007dc1 100%);
     color: #fff;
-    font-size: 14px;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#87e0fd', endColorstr='#05abe0', GradientType=0);
+    font-size: 13px;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00c1e9', endColorstr='#007dc1', GradientType=0);
+    box-sizing: border-box;
 }
 
 .policy {
-    width: 345px;
+    width: 320px;
     margin: 0 auto;
 }
 
 .policy p {
     color: #ccc;
-    font-size: 13px;
+    font-size: 11px;
     line-height: 16px;
     text-align: center;
 }
